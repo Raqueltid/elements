@@ -14,12 +14,12 @@ const concat = require("concat");
   await concat(files, "elements/elements.js");
 
   //Generar CSS
-  await fs.ensureDir("elements/assets/elements");
-  await fs.copyFile(
-    "./dist/elements/styles.css",
-    "elements/assets/elements/styles.css"
-  );
+  // await fs.ensureDir("elements/assets/elements");
+  //await fs.copyFile(
+  //  "./dist/elements/styles.css",
+  // "elements/assets/elements/styles.css"
+  //);
 
   // Generar ASSETS
-  await fs.copy("src/assets", "elements/assets");
+  // await fs.copy("src/assets", "elements/assets");
 })();
